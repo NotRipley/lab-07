@@ -45,14 +45,16 @@ The above visualization shows that the data is right-skewed with students genera
 # this uses the patchwork package loaded above
 # learn more about patchwork at https://patchwork.data-imaginist.com/
 # it might be useful for your presentations!
-plot_geom_point  <- ggplot(___)
+plot_geom_point  <- ggplot(data = evals) +
+  geom_point(mapping = aes(x = bty_avg, y = score))
 
-plot_geom_jitter <- ggplot(___)
+plot_geom_jitter <- ggplot(data = evals) +
+  geom_jitter(mapping = aes(x = bty_avg, y = score))
 
 plot_geom_point + plot_geom_jitter
 ```
 
-*Add your narrative here.*
+Jitter adds a small amount of random variation to each point, which allows points that would be stacked on top of each other to be seen individually. In the intial plot, many points were stacked, leading the viewer to believe there were fewer points at that location than there really were. 
 
 ### Exercise 3
 
