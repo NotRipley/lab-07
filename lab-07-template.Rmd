@@ -93,10 +93,10 @@ The intercept predicts what a teacher's score would be if their beauty score was
 
 ```{r glance-score_bty_fit, eval = FALSE}
 # remove eval = FALSE from the code chunk options after filling in the blanks
-glance(___)
+glance(score_bty_fit)
 ```
 
-*Add interpretation of R-squared here.*
+R^2 is a measure of fit, ie an average of how far from the line each point is. An R^2 of 1 would be a perfect fit, and so our R^2 here shows that the line of regression is really not a very good estimate for interpolation/extrapolation. 
 
 ### Exercise 8
 
