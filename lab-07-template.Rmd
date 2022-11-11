@@ -28,10 +28,13 @@ evals<-read.csv("data/evals.csv", row.names=1)
 ### Exercise 1
 
 ```{r viz-score}
-# add code here
+evals %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = score, binwidth = 20))
+
 ```
 
-*Add your narrative here.*
+The above visualization shows that the data is right-skewed with students generally giving higher scores, with a peak between 4 and 5.
 
 ### Exercise 2
 
