@@ -83,11 +83,11 @@ ggplot(data = evals, mapping = aes(x = bty_avg, y = score)) +
 
 ### Exercise 5
 
-*Add interpretation of intercept here.*
+The slope represents how much a higher a teacher's score would be on average if the average of their beauty score increased by 1.
 
 ### Exercise 6
 
-*Add interpretation of intercept here.*
+The intercept predicts what a teacher's score would be if their beauty score was 0.
 
 ### Exercise 7
 
