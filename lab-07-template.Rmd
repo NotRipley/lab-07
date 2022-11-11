@@ -75,7 +75,10 @@ score = 0.0666 * bty_avg + 3.88
 ### Exercise 4
 
 ```{r viz-score_bty_fit}
-# add your code here
+ggplot(data = evals, mapping = aes(x = bty_avg, y = score)) +
+  geom_jitter() +
+  geom_smooth(method = "lm", se = FALSE, formula = "y ~ x", colour = "Orange")
+
 ```
 
 ### Exercise 5
